@@ -1,0 +1,36 @@
+* {
+    font-family: monospace;
+    background-color: rgb(23, 0, 38);
+}
+
+#cntlbl{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: monospace;
+    text-shadow: white 1px 1px 20px;
+    color: rgb(246, 240, 255);
+}
+
+#btnbox{
+    text-align: center;
+}
+
+.buttons{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(211, 150, 255);
+    border-style: hidden;
+    cursor: pointer;
+    text-shadow: rgb(67, 0, 82) 1px 1px 5px;
+    /*color | offset-x | offset-y | blur radius */
+    transition: background-color 0.25s;
+}
+
+.buttons:hover{
+    background-color: rgb(101, 0, 174);
+}
