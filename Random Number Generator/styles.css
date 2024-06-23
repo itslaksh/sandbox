@@ -1,0 +1,65 @@
+* {
+    font-family: monospace;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.box {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.minmax {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border-radius: 15px;
+}
+
+.minmax.focus {
+    /* box-shadow: 0px 0px 15px rgb(211, 230, 250); */
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5); 
+    outline: none;
+}
+
+
+/* Generate Button  */
+
+#btn {
+    background-color: #f8fff8;
+    padding: 10px 20px;
+    margin: 20px;
+    color: black;
+    font-size: 2em;
+    font-weight: 700;
+    transition: box-shadow 0.3s,transform 0.3s ease;
+    border-radius: 15px;
+    border: none;
+    /* transition: ; */
+
+}
+
+#btn:hover {
+    box-shadow: 0px 0px 15px rgb(211, 230, 250);
+    /* background-color: gray; */
+}
+
+#btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 15px rgb(211, 230, 250);
+
+}
+
+
+#lbl{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+
+}
