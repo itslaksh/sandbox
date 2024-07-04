@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    font-family: monospace;
+    background-color: rgb(28, 28, 28);
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* ALL BUTTONS */
+.allbtns {
+    background-color: #f8fff8;
+    padding: 10px 20px;
+    margin: 20px;
+    color: black;
+    font-size: 2em;
+    font-weight: 700;
+    transition: box-shadow 0.3s, transform 0.2s ease;
+    border-radius: 7px;
+    border: none;
+    /* animation: pop 0.3s ease-in-out; */
+}
+
+.allbtns:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transform: scale(1.05);
+    /* background-color: gray; */
+}
+
+.allbtns:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px black;
+}
+
+/* INTRO SCREEN HEADING AND SHIT */
+#IntroID {
+    margin-top: 150px;
+    position: relative;
+    animation-name: movedown;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+
+#IntroID h1 {
+    font-size: 5em;
+    animation: textGlow 2s ease forwards;
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: none;
+    }
+
+    100% {
+        text-shadow: 1px 1px 20px black;
+    }
+}
+
+@keyframes movedown {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.screen {
+    display: none;
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.screen.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.screen.shrink {
+    transform: scale(0);
+}
+
+.screen.grow {
+    transform: scale(1.2);
+}
+
+.screen.grow-active {
+    transition: transform 0.5s ease, opacity 0.5s ease 0.25s;
+}
+
+
+/* Heading Box */
+.Head-Box {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.Head-Box .subscript {
+    position: absolute;
+    right: 0;
+    top: 80%;
+    font-size: 1em;
+}
+
+/* SOCIALS */
+#SocialID {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SocialID li {
+    list-style: none;
+}
+
+#SocialID li a {
+    display: inline-block;
+    margin-right: 0px;
+    transform: scale(.7);
+    transition: 0.5s;
+}
+
+#SocialID li a:hover {
+    transform: scale(0.8) translateY(-15px);
+}
+
+
+/* PLAYER NAMES  */
+#NameID {
+    margin-top: 190px;
+}
+
+.Name-Box {
+    display: inline-block;
+    padding: 10px 5px;
+    font-size: 1.5em;
+    color: black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+/* GAMEPLAY  */
+#P1 {
+    display: inline-block;
+    font-size: 3em;
+    margin: 10px;
+}
+
+#P2 {
+    display: inline-block;
+    font-size: 3em;
+}
+
+#GameID h1 {
+    display: inline-block;
+    font-size: 5.5em;
+    text-shadow: 0px 6px 10px black;
+    animation: pop 0.3s ease-in-out;
+
+}
+
+#GameID h2 {
+    display: inline-block;
+    margin: 10px;
+    font-size: 3em;
+    text-shadow: 0px 6px 10px black;
+    animation: pop 0.3s ease-in-out;
+
+}
+
+/* TICTACTOE GRIDS */
+.TicTacToe {
+    display: grid;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(51, 51, 51);
+    border-radius: 3%;
+    animation: pop 0.3s ease-in-out;
+}
+
+#AgainID .allbtns {
+    font-size: 1.5em;
+    margin: 0 100px;
+}
+
+.button-container {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.5s, filter 1s ease, transform 1s ease;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.box img {
+    width: 2em;
+    height: auto;
+    background: none;
+    animation: pop 0.3s ease-in-out;
+}
+
+.box:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+#box1 {
+    border-bottom: 1px whitesmoke;
+    border-right: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+
+#box2 {
+    border-bottom: 1px whitesmoke;
+    border-right: 1px whitesmoke;
+    border-left: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+#box3 {
+    border-bottom: 1px whitesmoke;
+    border-left: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+#box4 {
+    border-top: 1px whitesmoke;
+    border-right: 1px whitesmoke;
+    border-bottom: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+#box5 {
+    border-top: 1px whitesmoke;
+    border-right: 1px whitesmoke;
+    border-bottom: 1px whitesmoke;
+    border-left: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+#box6 {
+    border-top: 1px whitesmoke;
+    border-right: 1px whitesmoke;
+    border-bottom: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+#box7 {
+    border-top: 1px whitesmoke;
+    border-right: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+#box8 {
+    border-left: 1px whitesmoke;
+    border-top: 1px whitesmoke;
+    border-right: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+#box9 {
+    border-left: 1px whitesmoke;
+    border-top: 1px whitesmoke;
+    border-radius: 5%;
+}
+
+
+
+.blur-box {
+    filter: blur(3px) brightness(0.2);
+    transform: scale(0.92);
+    pointer-events: none;
+}
+
+@keyframes flash {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+
+    75% {
+        opacity: 0;
+    }
+}
+
+#winning-icon.flash-icon {
+    animation: flash .5s ease-in-out 1;
+}
+
+
+@media (max-width: 798px) {
+
+    #IntroID h1,
+    #GameID h1 {
+        font-size: 3em;
+    }
+
+    #GameID h2 {
+        font-size: 1.5em;
+    }
+
+    .allbtns {
+        font-size: 2em;
+        padding: 8px 16px;
+    }
+
+    .TicTacToe {
+        width: 280px;
+        height: 280px;
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .box {
+        width: 80px;
+        height: 80px;
+        font-size: 2em;
+    }
+
+    .button-container {
+        gap: 50px;
+    }
+
+    /* Player names */
+    #P1,
+    #P2 {
+        font-size: 2em;
+    }
+
+    /* Socials */
+    #SocialID {
+        flex-direction: row;
+    }
+
+    #SocialID li a {
+        transform: scale(0.5);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #IntroID h1,
+    #GameID h1 {
+        font-size: 1.5em;
+    }
+
+    #GameID h2 {
+        font-size: 1em;
+    }
+    .allbtns {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+
+    .TicTacToe {
+        width: 230px;
+        height: 230px;
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 70px);
+    }
+
+    .box {
+        width: 70px;
+        height: 70px;
+        font-size: 1.5em;
+    }
+
+
+    #AgainID {
+        display: flex;
+        justify-content: center;
+        margin: 60px auto;
+    }
+
+    #AgainID .allbtns {
+        margin: 0 auto;
+        font-size: 1.2em;
+        padding: 20px;
+    }
+
+    #P1,
+    #P2 {
+        font-size: 1.5em;
+    }
+
+    #SocialID {
+        flex-direction: row;
+    }
+
+    #SocialID li a {
+        transform: scale(0.4);
+    }
+}

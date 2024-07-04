@@ -1,0 +1,110 @@
+* {
+    font-family: monospace;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* -----------------------------Buttons----------------------------- */
+.allbtns {
+    background-color: #f8fff8;
+    padding: 10px 20px;
+    margin: 20px;
+    color: black;
+    font-size: 2em;
+    font-weight: 700;
+    transition: box-shadow 0.3s, transform 0.06s ease;
+    border-radius: 15px;
+    border: none;
+    /* transition: ; */
+
+}
+
+.allbtns:hover {
+    box-shadow: 0px 0px 15px rgb(211, 230, 250);
+    /* background-color: gray; */
+}
+.allbtns:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 15px rgb(211, 230, 250);
+}
+/* ------------------------------------------------------------------- */
+
+
+/* -----------------------------Intro----------------------------- */
+#introID {
+    margin-top: 200px;
+    position: relative;
+    animation-name: movedown;
+    animation-duration: 2s;
+    animation-timing-function: ease; 
+    animation-fill-mode: forwards;
+    
+}
+
+#introID h1 {
+    font-size: 4em;
+    animation: textGlow 2s ease forwards;
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 1px 1px 20px white;
+    }
+}
+
+@keyframes movedown {
+    0% {
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.screen{
+    display: none;
+}
+
+.active {
+    display: block;
+}
+/* ------------------------------------------------------------------- */
+
+
+/* -----------------------------Game Screen----------------------------- */
+.box {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.minmax {
+    display: inline-block;
+    padding: 10px 5px;
+    font-size: 1.5em;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+#gameID {
+    margin-top: 100px;
+}
+
+#resultID {
+    margin-top: 1--px;
+    color: whitesmoke;
+}
+
+#resultID p {
+    font-size: 2em;
+}

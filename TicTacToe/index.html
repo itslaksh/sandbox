@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe-Insanekun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Intro Screen -->
+    <div id="IntroID" class="screen active">
+        <div class="Head-Box">
+            <h1>Tic-Tac-Toe</h1>
+            <sub class="subscript">~by Insanekun</sub>
+        </div>
+        <br><br><br><br>
+        <button id="play" class="allbtns">PLAY!</button>
+    </div>
+    <ul id="SocialID" class="screen active">
+        <!-- <li>Socials:</li><br> -->
+        <li><a href="https://www.linkedin.com/in/lakshay-chaudhary-a97188260/"><img src="linkedin.png" alt=""
+                    style="width: 50px; height: auto;"></a></li>
+        <li><a href="https://github.com/Insanekun"><img src="github.png" alt="" style="width: 50px; height: auto;"></a>
+        </li>
+        <li><a href="https://www.instagram.com/yugen._.san/?next=%2Fdirect%2Finbox%2F"><img src="instagram.png" alt=""
+                    style="width: 50px; height: auto;"></a></li>
+    </ul>
+
+    <!-- Player Names Screen -->
+    <div id="NameID" class="screen">
+        <h2>Player 1 [<img src="x.png" alt="x" style="width: 20px; height: auto; vertical-align: bottom;">]:</h2>
+        <input type="text" class="Name-Box" id="Player-1" placeholder="Enter Your Name">
+
+        <br><br><br>
+        <h2>Player 2 [<img src="o.png" alt="o" style="width: 20px; height: auto; vertical-align: bottom;">]:</h2>
+        <input type="text" class="Name-Box" id="Player-2" placeholder="Enter Your Name">
+
+        <br><br><br>
+        <button id="start" class="allbtns">START!</button>
+    </div>
+
+
+    <!-- Game Screen -->
+    <div id="GameID" class="screen">
+        <div class="Head-Box">
+            <h2 id="P1"></h2>
+            <h2>[<img src="x.png" alt="x" style="width: 1.3em; height: auto; vertical-align: bottom;">]</h2>
+            <h1>VS</h1>
+            <h2 id="P2"></h2>
+            <h2>[<img src="o.png" alt="o" style="width: 1.2em; height: auto; vertical-align: bottom;">]</h2>
+        </div>
+
+        <div>
+            <h2 id="turnID"></h2>
+        </div>
+        <br><br>
+        <div class="TicTacToe">
+            <div class="box" id="box1" onclick="tap('box1')"></div>
+            <div class="box" id="box2" onclick="tap('box2')"></div>
+            <div class="box" id="box3" onclick="tap('box3')"></div>
+            <div class="box" id="box4" onclick="tap('box4')"></div>
+            <div class="box" id="box5" onclick="tap('box5')"></div>
+            <div class="box" id="box6" onclick="tap('box6')"></div>
+            <div class="box" id="box7" onclick="tap('box7')"></div>
+            <div class="box" id="box8" onclick="tap('box8')"></div>
+            <div class="box" id="box9" onclick="tap('box9')"></div>
+        </div>
+    </div>
+
+    <!-- Play Again -->
+    <div id="AgainID" class="screen">
+        <br><br><br>
+        <div class="btn-container"></div>
+        <button class="allbtns" onclick="GoHome()">Home!</button>
+        <button class="allbtns" onclick="PlayAgain()">Quick Rematch!</button>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+    <!-- Intro Screen -->
+    <div id="introID" class="screen active">
+        <h1>~Number Guessing Game~</h1>
+        <br><br>
+        <button id="play" class="allbtns">Play!</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameID" class="screen">
+        <div class="box">
+            <h3>Enter a Minimum Value:</h3>
+            <input type="number" class="minmax" id="min" placeholder="Enter min Value">
+        </div>
+
+        <div class="box">
+            <h3>Enter a Maximum Value:</h3>
+            <input type="number" class="minmax" id="max" placeholder="Enter max Value">
+        </div>
+
+        <br><br>
+        <h3>Take a Guess:</h3>
+        <input type="number" class="minmax" id="guess" placeholder="Enter your guess">
+
+        <h4 id="msg"></h4>
+
+        <br><br><br><br>
+
+        <button class="allbtns" id="guessBTN">Guess🤞</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="resultID"  class="screen">
+        <p id="FinalMsg"></p>
+        <button class="allbtns" id="Again">Play Again!</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
