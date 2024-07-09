@@ -432,3 +432,33 @@ body {
 #cover.active {
     opacity: 1;
 }
+
+
+/* SOCIALS */
+#SocialID {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    filter: invert();
+}
+
+#SocialID li {
+    margin-left: 3px;
+    margin-right: 3px;
+    list-style: none;
+}
+
+#SocialID li a {
+    display: inline-block;
+    margin-right: 0px;
+    transform: scale(.7);
+    transition: 0.5s;
+}
+
+#SocialID li a:hover {
+    transform: scale(0.8) translateY(-15px);
+}
