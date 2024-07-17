@@ -12,5 +12,5 @@ function Gotcha() {
     let msg = document.getElementById('msg');
     let image = document.getElementById('pepeImage');
     image.src = 'pepe_sad.gif';
-    msg.textContent = 'Fuckkk YOUU!!';
+    msg.textContent = 'You MONSTERR!!';
 }
