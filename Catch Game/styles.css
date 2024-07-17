@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: monospace;
+    background-color: rgb(218, 218, 218);
+}
+
+#box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 164, 138);
+    background: none;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.1s ease;
+    border-radius: 5px;
+    user-select: none;
+
+}
+
+#box img {
+    max-width: 85%;
+    max-height: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+#box p {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
