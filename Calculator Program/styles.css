@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body {
+    margin: 0;
+    display: flex;
+    font-family: Josefin Slab;
+    background-color: #494949;
+    font: bold;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    height: 100vh;
+}
+
+
+.Calculator {
+    min-width: 200px;
+    max-width: 400px;
+    margin: auto;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 30px;
+    user-select: none;
+
+}
+
+
+#Display {
+    background-color: rgb(30, 28, 28);
+    font-size: 2em;
+    text-align: right;
+    border: none;
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+    box-sizing: border-box;
+    font-family: Josefin Slab;
+    user-select: none;
+}
+
+.Keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+button {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    color: whitesmoke;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.5s ease, transform 0.2s ease;
+    padding: 10px 20px;
+    font-family: Josefin Slab;
+}
+
+#result {
+    grid-column: span 2;
+    font-weight: 400;
+    color: chocolate;
+    /* background-color: chocolate; */
+    border: solid 1px;
+    border-color: chocolate;
+}
+
+#OP-btn {
+    color: chocolate;
+    font-weight: 400;
+}
+button:hover {
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+}
+
+button:active {
+    transform: scale(0.96);
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- <h1>Calculator</h1> -->
+     <div class="container">
+        
+     </div>
+    <div class="Calculator">
+        <input id="Display" readonly>
+        <div class="Keys">
+            <button onclick="AllClear()" id="OP-btn">AC</button>
+            <button onclick="Backspace()" id="OP-btn">C</button>
+            <button onclick="ShowOnDisplay('%')" id="OP-btn">%</button>
+            <button onclick="ShowOnDisplay('/')" id="OP-btn">/</button>
+            <button onclick="ShowOnDisplay('7')">7</button>
+            <button onclick="ShowOnDisplay('8')">8</button>
+            <button onclick="ShowOnDisplay('9')">9</button>
+            <button onclick="ShowOnDisplay('*')" id="OP-btn">*</button>
+            <button onclick="ShowOnDisplay('4')">4</button>
+            <button onclick="ShowOnDisplay('5')">5</button>
+            <button onclick="ShowOnDisplay('6')">6</button>
+            <button onclick="ShowOnDisplay('-')" id="OP-btn">-</button>
+            <button onclick="ShowOnDisplay('1')">1</button>
+            <button onclick="ShowOnDisplay('2')">2</button>
+            <button onclick="ShowOnDisplay('3')">3</button>
+            <button onclick="ShowOnDisplay('+')" id="OP-btn">+</button>
+            <button onclick="ShowOnDisplay('0')">0</button>
+            <button onclick="ShowOnDisplay('.')" id="OP-btn">.</button>
+            <button onclick="Result('=')" id="result">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
