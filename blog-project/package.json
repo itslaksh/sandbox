@@ -13,14 +13,15 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://insanekun.github.io/sandbox/Blog-Project-React",
+  "homepage": "https://insanekun.github.io/sandbox/blog-project",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "server": "json-server --watch Data/blog-data.json --port 7000"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "gh-pages": "^6.1.1"
   }
 }
