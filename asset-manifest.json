@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/sandbox/static/css/main.bbff1b70.css",
+    "main.js": "/sandbox/static/js/main.edab2b47.js",
+    "static/media/bin.png": "/sandbox/static/media/bin.85831b84b3f264989284.png",
+    "index.html": "/sandbox/index.html",
+    "main.bbff1b70.css.map": "/sandbox/static/css/main.bbff1b70.css.map",
+    "main.edab2b47.js.map": "/sandbox/static/js/main.edab2b47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbff1b70.css",
+    "static/js/main.edab2b47.js"
+  ]
+}
