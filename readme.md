@@ -1,7 +1,5 @@
 # Basic HTML | CSS | JavaScript Projects lie here!
 
----
-
 - [**Time Program**](https://itslakxsh.github.io/sandbox/Time%20Program/)
 - [**Weather App**](https://itslakxsh.github.io/sandbox/Weather%20App/)
 - [**Guessing Game**](https://itslakxsh.github.io/sandbox/Guessing%20Game/)
